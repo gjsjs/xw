@@ -1,0 +1,451 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/index.css">
+	<title>首页</title>
+</head>
+<body>
+	<header>		
+			<div class="headx">
+				<div class="headz"><img src="img/logo.png" alt=""></div>
+				<ul class="heady">
+					<li><a href="">网站首页</a></li>
+					<li><a href="">家具产品</a>
+                         <ul class="head2">
+                         	<li><a href="">沙发</a></li>
+                         	<li><a href="">茶几</a></li>
+                         	<li><a href="">餐桌</a></li>
+                         	<li><a href="">座椅</a></li>
+                         	<li><a href=""></a></li>
+                         </ul>
+					</li>
+					<li><a href="">家居知识</a>
+                         <ul class="head3">
+                         	<li><a href="">行业咨询</a></li>
+                         	<li><a href="">小知识</a></li>
+                         </ul>
+					</li>
+					<li><a href="">品牌故事</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+			</div>
+	</header>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>装修公司-首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
+		<script type="text/javascript" src="js/radialIndicator.js"></script>
+		<script type="text/javascript" src="js/carousel.js"></script>
+	</head>
+	<body>
+		<div class="header">
+		<a name="mao"></a>
+			<p class="logo2"><img src="img/logo.png"/></p>
+			<ul>
+				<a href="index.html"><li class="active">
+					<span class="span1">首页</span>
+					<span class="span2">Home</span>
+					<span class="underLine"></span>
+				</li></a>
+				<a href="anli.html"><li>
+					<span class="span1">产品中心</span>
+					<span class="span2">Product</span>
+					<span class="underLine"></span>
+				</li></a>
+				<!-- <a href="project.html"><li>
+					<span class="span1">项目案例</span>
+					<span class="span2">Project</span>
+					<span class="underLine"></span>
+				</li></a> -->
+				
+				<a href="new.html"><li>
+					<span class="span1">新闻中心</span>
+					<span class="span2">News</span>
+					<span class="underLine"></span>
+				</li></a>
+				<a href="guanyuwomen.html"><li>
+					<span class="span1">关于我们</span>
+					<span class="span2">About us</span>
+					<span class="underLine"></span>
+				</li></a>
+				<a href="call.html"><li>
+					<span class="span1">联系我们</span>
+					<span class="span2">Contact</span>
+					<span class="underLine"></span>
+				</li></a>
+			</ul>
+			<p class="tel"></p>
+		</div>
+		<!-- <div class="banner" style="margin-top: 0px;">
+			<div class="swiper-container3">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background: url(img/banner.jpg)center;background-size:cover;">
+						<img src="img/banner.jpg"/>
+					</div>
+					<div class="swiper-slide" style="background: url(img/banner2.jpg)center;background-size:100% auto;">
+						<img src="img/banner2.jpg"/>
+					</div>
+					<div class="swiper-slide" style="background: url(img/banner.jpg)center;background-size:100% auto;">
+						<img src="img/banner.jpg"/>
+					</div>
+				</div>
+				<div class="swiper-pagination2"></div>
+			</div>
+		</div> -->
+		<div class="box">
+		<ul class="banner">
+			<li><img src="img/banner.jpg" alt=""></li>
+			<li><img src="img/banner2.jpg" alt=""></li>
+			<li><img src="img/banner.jpg" alt=""></li>
+		</ul>
+		<div class="left">&lt;</div>
+		<div class="right">&gt;</div>
+		<ul class="dian">
+			<li style="background: red"></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+    	<style>
+        .box{
+		width:100%;
+		height: 550px;
+		margin:0 auto;
+		position:relative;
+	}
+	.banner{
+		width:100%;
+		height: 550px;
+	}
+	.banner li{
+		width:100%;
+		height: 550px;
+		display:none;
+		position:absolute;
+		top:0;
+		left: 0;
+	}
+	.banner li img{
+		width: 100%;
+		height:550px;
+	}
+	.banner li:first-child{
+       display:block;
+	}
+	.left{
+		width:30px;
+		height:30px;
+		position:absolute;
+		top:50%;
+		left:0;
+		font-size:20px;
+		line-height:30px;
+		text-align:center;
+		color:#000;
+		background:rgba(0,0,0,0.4);
+		cursor: pointer;
+	}
+	.right{
+		width:30px;
+		height:30px;
+		position:absolute;
+		top:50%;
+		right:0;
+		font-size:20px;
+		line-height:30px;
+		text-align:center;
+		color:#000;
+		background:rgba(0,0,0,0.4);
+		cursor: pointer;
+	}
+    .dian{
+    	width:auto;
+    	height:10px;
+    	position:absolute;
+    	left:50%;
+    	bottom:20px;
+    }
+    .dian li{
+    	width:10px;
+    	height:10px;
+    	border-radius:50px;
+    	background:#ccc;
+    	float:left;
+    	margin-right:5px;
+    }
+    	</style>
+			<script>
+				/*var swiper=new Swiper(".swiper-container3",{
+					pagination:".swiper-pagination2",
+			        slidesPerView: 1,
+			        paginationClickable: true,
+			        loop: true,
+			        autoplay:5000
+			        
+				})*/
+		let c=0;
+		let lis=$('.banner>li');
+		let lit=$('.dian>li');
+		$('.right').on('click',function(){
+			c++;
+			if (c>lis.length) {c=0}
+			lis.eq(c).show().siblings().hide();
+            lit.eq(c).css({background:'red'}).siblings().css({background:'#ccc'})
+		})
+		$('.left').on('click',function(){
+			c--;
+			if (c<0) {c=lis.length}
+			lis.eq(c).show().siblings().hide();
+            lit.eq(c).css({background:'red'}).siblings().css({background:'#ccc'})
+		})
+		let t=setInterval(move,1000);
+		function move(){
+			c++;
+			if(c>lis.length){
+				c=0
+			}
+			lis.eq(c).show().siblings().hide();
+       lit.eq(c).css({background:'red'}).siblings().css({background:'#ccc'})
+
+		}
+		$('.box').on('mouseover',function(){clearInterval(t)});
+		$('.box').on('mouseleave',function(){t=setInterval(move,1000)});
+
+			</script>
+		<div class="cont1">
+			<div class="title">
+				<p class="p1">A</p>
+				<div class="p2">
+					<p class="pp1">关于</p>
+					<p class="pp2">BOUT US</p>
+				</div>
+			</div>
+			<div class="cont1_box">
+				<div class="cont1_left">
+					<p class="p1">公司介绍</p>
+					<!-- <h6>COMPANY INTRODUCTION</h6> -->
+					<p class="p2">FURNITUREDESGIN是一家拥有丰富的经验的家具设计公司。所设计的家具销往全国各地。设计的实践，在于为生活提供更舒适的环境及精确负责的施工，我们具有非常专业的团队，为客户创造符合装修风格的贴心家具。满足客户的要求与喜好，甚至将梦想中的生活氛围透过专业的感知力呈现，将家具透过色彩以及最和谐的比例设计而成。</p>
+    				<p class="p2">公司凭借高素质的人才队伍，先进的工艺和完善的企业管理，赢得了国内外客户的良好赞誉。</p>
+				</div>
+				<div class="cont1_right">
+					<img src="img/cont1_pic1.jpg"/>
+				</div>
+			</div>
+			<a href="guanyuwomen.html"><p class="moreP">MORE</p></a>
+		</div>
+		<div class="line"></div>
+		<div class="cont2">
+			<img src="img/cont2_bg.jpg"/>
+			<div class="title">
+				<p class="p1">P</p>
+				<div class="p2">
+					<p class="pp1">产品</p>
+					<p class="pp2">RODUCT</p>
+				</div>
+			</div>
+			<ul class="yizi">
+			<li><a href=""><img src="img/product1.png" alt=""></a></li>
+			<li><a href=""><img src="img/product1.png" alt=""></a></li>
+			<li><a href=""><img src="img/product1.png" alt=""></a></li>
+			<li><a href=""><img src="img/product1.png" alt=""></a></li>
+			<li><a href=""><img src="img/product1.png" alt=""></a></li>
+			<li><a href=""><img src="img/product1.png" alt=""></a></li>
+		   </ul>
+			<a href="anli.html"><p class="moreP">MORE</p></a>
+		</div>
+		<div class="line"></div>
+		<div class="cont3">
+			<div class="title">
+				<p class="p1">N</p>
+				<div class="p2">
+					<p class="pp1">新闻</p>
+					<p class="pp2">EWS</p>
+				</div>
+			</div>
+			<div class="swiper-container1">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<div class="news_li">
+							<p class="p1">29<span>/07</span></p>
+							<p class="p2">派安集团举办2017三八“女神”节主题活动 </p>
+							<p class="p3"><img src="img/j1.jpg"/></p>
+							<p class="p4">我国以及美国、日本、印度的研究显示，长期食用香油可明显降低高血压的发病率，还会减少高血压患者为降低血压所必须服用的药物数量。香油中富含有益健康，特别是有益心脏和血管健康的不饱和脂肪酸这些不饱和脂.</p>
+						</div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<div class="news_li">
+							<p class="p1">29<span>/07</span></p>
+							<p class="p2">派安集团举办2017三八“女神”节主题活动 </p>
+							<p class="p3"><img src="img/j2.jpg"/></p>
+							<p class="p4">我国以及美国、日本、印度的研究显示，长期食用香油可明显降低高血压的发病率，还会减少高血压患者为降低血压所必须服用的药物数量。香油中富含有益健康，特别是有益心脏和血管健康的不饱和脂肪酸这些不饱和脂.</p>
+						</div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<div class="news_li">
+							<p class="p1">29<span>/07</span></p>
+							<p class="p2">派安集团举办2017三八“女神”节主题活动 </p>
+							<p class="p3"><img src="img/j3.jpg"/></p>
+							<p class="p4">我国以及美国、日本、印度的研究显示，长期食用香油可明显降低高血压的发病率，还会减少高血压患者为降低血压所必须服用的药物数量。香油中富含有益健康，特别是有益心脏和血管健康的不饱和脂肪酸这些不饱和脂.</p>
+						</div>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+			<script>        
+			  var mySwiper = new Swiper ('.swiper-container1', {
+			    direction: 'horizontal',
+			    loop: true,
+			    slidesPerView: 2,
+			    pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        spaceBetween:60
+			  })        
+			  </script>
+			<a href="new.html"><p class="moreP">MORE</p></a>
+		</div>
+		<div class="line"></div>
+		<div class="cont4">
+			<div class="title">
+				<p class="p1">C</p>
+				<div class="p2">
+					<p class="pp1">案例</p>
+					<p class="pp2">ASE</p>
+				</div>
+			</div>
+			<div class="cont4_box">
+				<ul class="cont4_left">
+					<li><img src="img/j4.jpg"/></li>
+					<li><img src="img/j4.jpg"/></li>
+					<li><img src="img/j4.jpg"/></li>
+					<li><img src="img/j4.jpg"/></li>
+				</ul>
+				<div class="cont4_center">
+			
+					<p class="p1">怎么搭配茶几与沙发?</p>
+					<p class="p2">公司秉承“以科技为先导，以创新求发展，以质量为依托，以诚信待客户”的企业精神，“以信誉为生命，以产品为基石，以服务为保证，以价格为标杆，以利润为中心”的经营理念，创科技型、管理型、专家型”企业的发展方向，追求品牌专业化、环境榜样化、团队素质化、顾客主动化，以奉献绿色建材为己任。</p>
+				</div>
+				<ul class="cont4_right">
+					<li><img src="img/j4.jpg"/></li>
+					<li><img src="img/j4.jpg"/></li>
+					<li><img src="img/j4.jpg"/></li>
+					<li><img src="img/j4.jpg"/></li>
+				</ul>
+			</div>
+			<a href="anli.html"><p class="moreP">MORE</p></a>
+		</div>
+		<div class="line"></div>
+		<div class="cont5">
+			<div class="title">
+				<p class="p1">C</p>
+				<div class="p2">
+					<p class="pp1">合作企业</p>
+					<p class="pp2">OOPERATION</p>
+				</div>
+			</div>
+			<div class="cont5_box">
+				<table border="0" cellpadding="0" cellspacing="0 ">
+					<tr>
+						<td><img src="img/1.jpg"/></td>
+						<td><img src="img/2.jpg"/></td>
+						<td><img src="img/3.jpg"/></td>		
+					</tr>
+					<tr>
+						<td><img src="img/5.jpg"/></td>
+						<td><img src="img/6.jpg"/></td>
+						<td><img src="img/3.jpg"/></td>					
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- <div class="right_box">
+			<ul>
+				<li class="to_top" style="height: 69px;">
+					<img class="img2" src="img/to_top2.png"/>
+				</li>
+			</ul>
+			
+		</div> -->
+		<div class="right_box">
+					<a href="#mao"><img class="img2" src="img/to_top2.png"/></a>
+		</div>
+		<div class="footer">
+			<div class="footer_box">
+				<div class="footer_left">
+					<p>
+						<a href="about.html">关于我们 </a> | 
+						<a>使用帮助</a> | 
+						<a>用户协议</a> | 
+						<a>联系我们</a> | 
+						<a>版权声明</a>
+					</p>
+					<p>XXX有限公司 </p>
+					<p>联系电话：123-4566-4666</p>
+					<p>E-mail：123@qq.com </p>
+					<p>网址:www.123.</p>
+					<p>地址：中国·成都</p>
+				</div>
+				<div class="footer_right">
+					<p style="margin-right: 30px;">
+						<img src="img/qccode.png"/>
+						<span>公众号二维码</span>
+					</p>
+					<p>
+						<img src="img/qccode.png"/>
+						<span>人人店二维码</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(window).resize(function () {      
+			$(".cont4_center ").css("height",$(".cont4_left").css("height"));
+		});
+		$(function(){
+			$(".cont4_center ").css("height",$(".cont4_left").css("height"));
+			$(".to_top").click(function(){
+				$('html,body').animate({scrollTop:0},500);
+			});
+			$(".right_box ul li").hover(function(){
+				$(this).addClass("active");
+			},function(){
+				$(this).removeClass("active");
+			});
+			$(".right_box ul li.er").hover(function(){
+				$(".erweima").stop().fadeIn();
+			},function(){
+				$(".erweima").stop().fadeOut();
+			});
+			$(".header ul li").find(".span2").hide();
+			$(".header ul li.active").find(".span1").hide();
+			$(".header ul li.active").find(".span2").show();
+			$(".header ul li.active").find(".underLine").css("width","100%");
+			$(".header ul li").hover(function(){
+				$(this).addClass("active");
+				$(this).find(".span1").hide();
+				$(this).find(".span2").show();
+				$(this).find(".underLine").stop().animate({width:"100%"});
+			},function(){
+				$(this).removeClass("active");
+				$(this).find(".span1").show();
+				$(this).find(".span2").hide();
+				$(this).find(".underLine").stop().animate({width:"0"});
+			});
+			
+		});
+	</script>
+</html>
